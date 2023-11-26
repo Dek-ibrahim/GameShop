@@ -1,0 +1,30 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    transition: 0.5s;
+    z-index: 1000;
+}
+header.scrolled {
+    background: rgb(0, 0, 0, 0.6);
+    border-bottom: 2px solid var(--primary);
+    border-image: linear-gradient(90deg, tranparent,  var(--primary), transparent) 30;
+    backdrop-filter: blur(20px);
+    padding: 10px 100px;
+}
+.logo{
+    font-family: racing sans one, cursive;
+    font-size: 35px;
+    color:  #ffffff;
+    letter-spacing: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav{
+    display: flex;
+}
