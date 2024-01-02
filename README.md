@@ -13,5 +13,3 @@ adfjadfakldfja
 adjhljkdfddkfjkadkljfadf]\adjfaaldkjfad
 asdjfhaldkfjadf
 fjafadsjkfadakdjfa
-adfjadajdfhadjfhadfhadkfa
-adfkjadfjladkjfaddfnaadklfja
