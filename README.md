@@ -7,3 +7,4 @@ Currently, two official plugins are available:
 git add .
 git commit -m "done"
 git add .
+sdj
