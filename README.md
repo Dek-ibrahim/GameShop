@@ -7,4 +7,5 @@ Currently, two official plugins are available:
 git add .
 git commit -m "done"
 git add .
-git commit -m 
+git commit -m "done"
+git push
