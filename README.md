@@ -5,7 +5,4 @@ This template provides a minimal setup to get React working in Vite with HMR and
 Currently, two official plugins are available:
 
 git add .
-git commit -m "done"
-git add .
-git commit -m "done"
-git push
+git commit -m "done
