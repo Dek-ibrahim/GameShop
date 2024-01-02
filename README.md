@@ -7,14 +7,3 @@ djhfadjf
 adjfha
 da
 
-
-
-
-
-adfjad
-asdkfhlajdhfaadfja
-adfhj
-adjfhadf
-asdjfhaldjfha
-adf
-adhja
