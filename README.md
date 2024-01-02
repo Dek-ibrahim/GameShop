@@ -10,4 +10,6 @@ git add .
 sdjadjkalksdjalksdjfhadfhasdlfhadjfhD
 ASDJFHADSKFJADF
 ADJFHASDJKFADLJajfksldkfj;adfadsjkfa
-asdj
+asdjgit add .
+git commit -m "done"
+git push
