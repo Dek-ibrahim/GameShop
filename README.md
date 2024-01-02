@@ -10,6 +10,4 @@ git add .
 git commit -m "donelakdjf"
 git pulkdfjaddfadjfajdfdfhakdjfhajdadfja
 adfjadfakldfja
-adjhladf
-adfjakdfj
-asdjf
+adjh
