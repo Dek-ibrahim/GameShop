@@ -14,6 +14,3 @@ adjhljkdfddkfjkadkljfadf]\adjfaaldkjfad
 asdjfhaldkfjadfdkjf
 adklfj
 adfjajdf
-adjf
-adjhf
-adjfalkdjakjdf
