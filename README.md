@@ -6,7 +6,3 @@ Currently, two official plugins are available:
 djhfadjf
 adjfha
 da
-
-aldjfa
-adfhaj
-adfh
