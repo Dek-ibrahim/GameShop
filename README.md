@@ -8,4 +8,4 @@ git add .
 git commit -m "done"
 git add .
 git commit -m "donelakdjf"
-git pu
+git pulkdfjad
