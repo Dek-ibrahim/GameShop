@@ -7,5 +7,5 @@ Currently, two official plugins are available:
 akldjfhadkjf
 asdkjhad\]adfjhaf
 adfjha
-dfjhadf]adf
+dfjh
 a[dfadjhf]
