@@ -6,6 +6,7 @@ Currently, two
 official plugins 
 are available:
 rjkhfa
+f
 jhdf
 jhf
 ajj
