@@ -22,7 +22,7 @@ model Route {
 
 model Booki ment())
   UserID   
-  Passengers   Int D], references: 
+  Passengers   Int D], references: [UserID 
   Route        Route    @relation(fields: [Route 
 
 model Schedule {
