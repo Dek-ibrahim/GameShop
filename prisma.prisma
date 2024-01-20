@@ -22,8 +22,8 @@ model Route {
 
 model Booki ment())
   UserID   
-  Passengers   Int D], r 
-  Route        Route    
+  Passengers   Int D], referen 
+  Route        Route    @relation(fi 
 
 model Schedule {
   ScheduleID  Int      @id
