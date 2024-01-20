@@ -60,6 +60,10 @@ CREATE TABLE Booking (
 );
 
 
+
+
+
+
 CREATE TABLE User (
     UserID INT PRIMARY KEY AUTO_INCREMENT,
     Username VARCHAR(255),
@@ -91,8 +95,19 @@ CREATE TABLE Route (
 -- Bus Table
 CREATE TABLE Bus (
     BusID INT PRIMARY KEY AUTO_INCREMENT,
-    BusNumber VARCHAR(20),
+    BusName VARCHAR(20),
     Capacity INT,
     CurrentLocation VARCHAR(255),
     Status VARCHAR(20)
+);
+
+ CREATE TABLE Schedule (
+    ScheduleID INT PRIMARY KEY,
+    RouteID INT,
+    BusID INT,
+    DepartureTime TIME,
+    ArrivalTime TIME,
+    DayOfWeek VARCHAR(10),
+    FOREIGN KEY (RouteID) REFERENCES Route(RouteID),
+    FOREIGN KEY (BusID) REFERENCES Bus(BusID)
 );
