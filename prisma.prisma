@@ -23,7 +23,7 @@ model Route {
 model Booki ment())
   UserID       In
   RouteID      Int
-  BookingTime  DateTime @defau
+  BookingTime  Dat
   Passengers   Int
   Status       String
   User         User     @relation(fields: [UserID], references: [UserID])
