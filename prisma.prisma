@@ -17,11 +17,12 @@ model Route {
   BusID            Int      @id @default(autoincrement())
   BusName          String
   Capacity         Int
-  CurrentLocation  Strin
+  CurrentLocation  String
+  Status           St
 }
 
 model Booki ment())
-  UserID       In
+  UserID       Int sID        Int
   RouteID      Int
   BookingTime  DateTime @default(now())
   Passengers   Int
