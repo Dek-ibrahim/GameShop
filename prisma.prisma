@@ -18,10 +18,10 @@ model Route {
   BusName          String
   Capacity         Int
   CurrentLocation  String
-  Status           St
+  Status           String
 }
 
-model Booking {]
+model Booking {
   BookingID    Int      @id @default(autoincrement())
   UserID       Int
   BusID        Int
