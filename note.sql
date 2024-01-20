@@ -105,8 +105,6 @@ CREATE TABLE Bus (
     ScheduleID INT PRIMARY KEY,
     RouteID INT,
     BusID INT,
-    DepartureTime TIME,
-    ArrivalTime TIME,
     DayOfWeek VARCHAR(10),
     FOREIGN KEY (RouteID) REFERENCES Route(RouteID),
     FOREIGN KEY (BusID) REFERENCES Bus(BusID)
