@@ -21,7 +21,7 @@ model Route {
   Status           St
 }
 
-model Booking {
+model Booki
   BookingID    Int      @id @default(autoincrement())
   UserID       Int
   BusID        Int
