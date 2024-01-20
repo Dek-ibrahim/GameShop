@@ -23,7 +23,7 @@ model Route {
 model Booki ment())
   UserID       In 
   Passengers   Int
-  Status       String
+  Sta 
   User         User     @relation(fields: [UserID], references: [UserID])
   Bus          Bus      @relation(fields: [BusID], references: [BusID])
   Route        Route    @relation(fields: [RouteID], references: [RouteID])
