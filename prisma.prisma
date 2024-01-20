@@ -12,9 +12,7 @@ model Route {
   RouteID      Int      @id @default(autoincrement())
   StartLocation String
   EndLocation   String
-  Distance      Float
-}
-
+  Distance      Flo
 model Bus {
   BusID            Int      @id @default(autoincrement())
   BusName          String
