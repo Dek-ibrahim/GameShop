@@ -13,7 +13,6 @@ model Route {
   StartLocation String
   EndLocation   String
   Distance      Float
-}
 
 model Bus {
   BusID            Int      @id @default(autoincrement())
