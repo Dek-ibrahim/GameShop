@@ -21,9 +21,11 @@ model Route {
 }
 
 model Booki ment())
-  UserID   
+  UserID       In
+  RouteID      Int
+  BookingTime  Dat
   Passengers   Int
-  Sta 
+  Status       String
   User         User     @relation(fields: [UserID], references: [UserID])
   Bus          Bus      @relation(fields: [BusID], references: [BusID])
   Route        Route    @relation(fields: [RouteID], references: [RouteID])
