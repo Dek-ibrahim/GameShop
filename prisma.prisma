@@ -22,7 +22,8 @@ model Route {
 }
 
 model Booki ment())
-  UserID       Int sID        Int
+  UserID       Int
+  BusID        Int
   RouteID      Int
   BookingTime  DateTime @default(now())
   Passengers   Int
