@@ -17,8 +17,7 @@ model Route {
   BusID            Int      @id @default(autoincrement())
   BusName          String
   Capacity         Int
-  CurrentLocation  String
-  Status           St
+  CurrentLocation  Strin
 }
 
 model Booki ment())
