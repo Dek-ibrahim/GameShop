@@ -21,8 +21,7 @@ model Route {
 }
 
 model Booki ment())
-  UserID   
-  Passengers   I 
+  User I 
 
 model Schedule {
   ScheduleID  Int      @id
