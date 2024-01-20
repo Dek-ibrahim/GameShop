@@ -1,0 +1,46 @@
+// Prisma data model
+
+model User {
+  UserID    Int      @id @default(autoincrement())
+  Username  String
+  Password  String
+  Email     String
+  Phone     String
+}
+
+model Route {
+  RouteID      Int      @id @default(autoincrement())
+  StartLocation String
+  EndLocation   String
+  Distance      Float
+}
+
+model Bus {
+  BusID            Int      @id @default(autoincrement())
+  BusName          String
+  Capacity         Int
+  CurrentLocation  String
+  Status           String
+}
+
+model Booking {
+  BookingID    Int      @id @default(autoincrement())
+  UserID       Int
+  BusID        Int
+  RouteID      Int
+  BookingTime  DateTime @default(now())
+  Passengers   Int
+  Status       String
+  User         User     @relation(fields: [UserID], references: [UserID])
+  Bus          Bus      @relation(fields: [BusID], references: [BusID])
+  Route        Route    @relation(fields: [RouteID], references: [RouteID])
+}
+
+model Schedule {
+  ScheduleID  Int      @id
+  RouteID     Int
+  BusID       Int
+  DayOfWeek   String
+  Route       Route    @relation(fields: [RouteID], references: [RouteID])
+  Bus         Bus      @relation(fields: [BusID], references: [BusID])
+}
