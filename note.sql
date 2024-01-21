@@ -45,7 +45,11 @@ CREATE TABLE Bus (
     Capacity INT,
     CurrentLocation VARCHAR(255),
     Status VARCHAR(20)
-)
+);
+
+ CREATE TABLE Schedule (
+
+
     ScheduleID INT PRIMARY KEY,
     RouteID INT,
     BusID INT,
