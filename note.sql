@@ -16,4 +16,6 @@ CREATE TABLE User (
     Email VARCHAR(255),
     Phone VARCHAR(15),
     
-); 
+);
+-- Booking Table
+CREATE TABLE Booking (
