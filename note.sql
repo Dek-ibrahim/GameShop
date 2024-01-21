@@ -48,5 +48,4 @@ CREATE TABLE Bus (
 )
     ScheduleID INT PRIMARY KEY,
     RouteID INT,
-    BusID INT,
-    DayOfW 
+    BusI  
