@@ -29,4 +29,10 @@ CREATE TABLE Booking (
     FOREIGN KEY (UserID) REFERENCES User(UserID),
     FOREIGN KEY (BusID) REFERENCES Bus(BusID),
     FOREIGN KEY (RouteID) REFERENCES Route(RouteID)
-); 
+);
+-- Route Table
+CREATE TABLE Route (
+    RouteID INT PRIMARY KEY AUTO_INCREMENT,
+    StartLocation VARCHAR(255),
+    EndLocation VARCHAR(255),
+    Distanc 
