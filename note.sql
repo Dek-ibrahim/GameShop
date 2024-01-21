@@ -36,6 +36,7 @@ CREATE TABLE Route (
     StartLocation VARCHAR(255),
     EndLocation VARCHAR(255),
     Distance DECIMAL(10,2)
-
+);
+-- Bus Table
 CREATE TABLE Bus (
-    BusID INT PRIMARY KEY app.use(session({ secr
+    BusID INT PRIMARY KEY app.use(session({ secret: 'yourSecretHere', resave: true, saveUninitialized: true }));
