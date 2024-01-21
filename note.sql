@@ -17,5 +17,4 @@ CREATE TABLE User (
     Phone VARCHAR(15),
     
 );
--- Booking Table
-CREATE TABLE B
+-- Booking Tabl
