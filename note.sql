@@ -9,5 +9,4 @@ buss
 
 
 
-CREATE TABLE Use
-); 
+CREATE TABLE 
