@@ -18,5 +18,4 @@ CREATE TABLE User (
     
 );
 -- Booking Table
-CREATE TABLE Booking (
-    BookingID INT PRI
+CREATE TABLE B
