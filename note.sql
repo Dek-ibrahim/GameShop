@@ -39,8 +39,7 @@ CREATE TABLE Route (
 );
 -- Bus Table
 CREATE TABLE Bus (
-    BusID INT PRIMARY KEY app.use(session({ secret: 'yourSecretHere', resave: true, saveUninitialized: true }));
-,
+    BusID INT PRIMARY KEY AUTO_INCREMENT,
     BusName VARCHAR(20),
     Capacity INT,
     CurrentLocation VARCHAR(255),
