@@ -29,6 +29,4 @@ CREATE TABLE Booking (
     FOREIGN KEY (UserID) REFERENCES User(UserID),
     FOREIGN KEY (BusID) REFERENCES Bus(BusID),
     FOREIGN KEY (RouteID) REFERENCES Route(RouteID)
-);
--- Route Table
-CREATE TA 
+); 
