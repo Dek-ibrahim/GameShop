@@ -23,6 +23,4 @@ CREATE TABLE Booking (
     UserID INT,
     BusID INT,
     RouteID INT,
-    BookingTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    Passengers INT,
-    Sta  
+    Book  
