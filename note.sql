@@ -9,7 +9,5 @@ buss
 
 
 
-CREATE TABLE User (
-    Us 
-    
+CREATE TABLE Use
 ); 
