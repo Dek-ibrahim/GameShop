@@ -48,4 +48,6 @@ CREATE TABLE Bus (
 )
     ScheduleID INT PRIMARY KEY,
     RouteID INT,
-    BusI  
+    BusID INT,
+    DayOfWeek VARCHA   
+);
