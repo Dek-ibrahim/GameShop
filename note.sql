@@ -9,4 +9,4 @@ buss
 
 
 
-CREATE TABLE 
+CREATE TA
