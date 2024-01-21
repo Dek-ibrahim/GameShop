@@ -36,4 +36,5 @@ CREATE TABLE Route (
     StartLocation VARCHAR(255),
     EndLocation VARCHAR(255),
     Distance DE
-CREATE TABLE Bus  
+CREATE TABLE Bus (
+    BusID INT PRIMARY KEY app ecr
