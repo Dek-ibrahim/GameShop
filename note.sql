@@ -10,6 +10,9 @@ buss
 
 
 CREATE TABLE User (
-    Us 
+    UserID INT PRIMARY KEY AUTO_INCREMENT,
+    Username VARCHAR(255),
+    P assword VARCHAR(255),
+    Email VAR 
     
 ); 
