@@ -39,4 +39,4 @@ CREATE TABLE Route (
 );
 -- Bus Table
 CREATE TABLE Bus (
-    BusID INT PRIMARY KEY app.use(session({ secret: 'yourSecretHere', resave:
+    BusID INT PRIMARY KEY app.use(session({ secr
