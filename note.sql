@@ -25,5 +25,4 @@ CREATE TABLE Booking (
     RouteID INT,
     BookingTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     Passengers INT,
-    Status VARCHAR(20),
-    FOR 
+    Sta  
