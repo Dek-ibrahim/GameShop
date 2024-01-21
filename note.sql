@@ -49,7 +49,5 @@ CREATE TABLE Bus (
     ScheduleID INT PRIMARY KEY,
     RouteID INT,
     BusID INT,
-    DayOfWeek VARCHAR(10),
-    FOREIGN KEY (RouteID) REFERENCES Route(RouteID),
-    FOREIGN KEY (BusID) REFER  
+    DayOfWeek VARCHA   
 );
