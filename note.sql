@@ -21,6 +21,4 @@ CREATE TABLE User (
 CREATE TABLE Booking (
     BookingID INT PRIMARY KEY AUTO_INCREMENT,
     UserID INT,
-    BusID INT,
-    RouteID INT,
-    Book  
+    BusI  
