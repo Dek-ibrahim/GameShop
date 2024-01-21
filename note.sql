@@ -25,4 +25,5 @@ CREATE TABLE Booking (
     RouteID INT,
     BookingTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     Passengers INT,
-    Sta  
+    Status VARCHAR(20),
+    FOREIGN KEY (UserID) REFEREN 
