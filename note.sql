@@ -51,5 +51,5 @@ CREATE TABLE Bus (
     BusID INT,
     DayOfWeek VARCHAR(10),
     FOREIGN KEY (RouteID) REFERENCES Route(RouteID),
-    FOREIGN KEY (BusID) REFERENCES Bus(BusID)
+    FOREIGN KEY (BusID) REFER sID)
 );
