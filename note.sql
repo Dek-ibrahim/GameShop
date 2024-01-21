@@ -26,4 +26,4 @@ CREATE TABLE Booking (
     BookingTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     Passengers INT,
     Status VARCHAR(20),
-    FOREIGN KEY (UserID) REFERENC  
+    FOR 
