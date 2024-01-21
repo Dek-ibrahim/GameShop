@@ -14,6 +14,6 @@ CREATE TABLE User (
     Username VARCHAR(255),
     P assword VARCHAR(255),
     Email VARCHAR(255),
-    Phone VARCHAR(15),
+    Phone VARCHAR,
     
 ); 
