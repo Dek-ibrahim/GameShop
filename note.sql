@@ -48,8 +48,6 @@ CREATE TABLE Bus (
 );
 
  CREATE TABLE Schedule (
-
-
     ScheduleID INT PRIMARY KEY,
     RouteID INT,
     BusID INT,
