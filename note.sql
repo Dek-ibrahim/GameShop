@@ -40,5 +40,3 @@ CREATE TABLE Route (
 -- Bus Table
 CREATE TABLE Bus (
     BusID INT PRIMARY KEY app.use(session({ secret: 'yourSecretHere', resave: true, saveUninitialized: true }));
-,
-    BusName VARCHA
