@@ -9,4 +9,7 @@ buss
 
 
 
-CREATE TA
+CREATE TABLE User (
+    Us 
+    
+); 
