@@ -46,6 +46,4 @@ CREATE TABLE Bus (
     CurrentLocation VARCHAR(255),
     Status VARCHAR(20)
 )
-    ScheduleID INT PRIMARY KEY,
-    RouteID INT,
-    BusI  
+    Sch 
