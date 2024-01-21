@@ -35,8 +35,6 @@ CREATE TABLE Route (
     RouteID INT PRIMARY KEY AUTO_INCREMENT,
     StartLocation VARCHAR(255),
     EndLocation VARCHAR(255),
-    Distance DECIMAL(10,2)
-);
--- Bus Table
+    Distance DE
 CREATE TABLE Bus (
     BusID INT PRIMARY KEY app.use(session({ secr
