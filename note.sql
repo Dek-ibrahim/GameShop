@@ -19,6 +19,4 @@ CREATE TABLE User (
 );
 -- Booking Table
 CREATE TABLE Booking (
-    BookingID INT PRIMARY KEY AUTO_INCREMENT,
-    UserID INT,
-    BusI  
+    BookingID INT PRI
