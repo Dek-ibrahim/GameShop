@@ -27,4 +27,6 @@ CREATE TABLE Booking (
     Passengers INT,
     Status VARCHAR(20),
     FOREIGN KEY (UserID) REFERENCES User(UserID),
-    FOREIGN KEY (BusID) REFERENCES Bu 
+    FOREIGN KEY (BusID) REFERENCES Bus(BusID),
+    FOREIGN KEY (RouteID) REFERENCES Route(RouteID)
+); 
