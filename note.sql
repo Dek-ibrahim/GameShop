@@ -40,5 +40,4 @@ CREATE TABLE Route (
 -- Bus Table
 CREATE TABLE Bus (
     BusID INT PRIMARY KEY AUTO_INCREMENT,
-    BusName VARCHAR(20),
-    Cap
+    BusName VARCHAR(2
