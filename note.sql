@@ -51,4 +51,4 @@ CREATE TABLE Bus (
     RouteID INT,
     BusID INT,
     DayOfWeek VARCHAR(10),
-    FOREIGNRouteID) REFERENCES Rou
+    FOREIGNRouteID) REFERENC
