@@ -43,4 +43,4 @@ CREATE TABLE Bus (
     BusName VARCHAR(20),
     Capacity INT,
     CurrentLocation VARCHAR(255),
-    Statu
+    
