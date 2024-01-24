@@ -37,5 +37,4 @@ CREATE TABLE Route (
     EndLocation VARCHAR(255),
     Distance DECIMAL(10,2)
 );
--- Bus Table
-CRE
+-- Bus Tab
