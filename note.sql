@@ -43,7 +43,4 @@ CREATE TABLE Bus (
     BusName VARCHAR(20),
     Capacity INT,
     CurrentLocation VARCHAR(255),
-    Status VARCHAR(20)
-);
-
- 
+    Status VARC
