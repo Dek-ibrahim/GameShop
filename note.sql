@@ -39,5 +39,4 @@ CREATE TABLE Route (
 );
 -- Bus Table
 CREATE TABLE Bus (
-    BusID INT PRIMARY KEY AUTO_INCREMENT,
-    BusNa
+    BusID INT PRIM
