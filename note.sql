@@ -38,5 +38,4 @@ CREATE TABLE Route (
     Distance DECIMAL(10,2)
 );
 -- Bus Table
-CREATE TABLE Bus (
-    Bus
+CRE
