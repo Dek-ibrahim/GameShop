@@ -35,6 +35,4 @@ CREATE TABLE Route (
     RouteID INT PRIMARY KEY AUTO_INCREMENT,
     StartLocation VARCHAR(255),
     EndLocation VARCHAR(255),
-    Distance DECIMAL(10,2)
-);
--- Bu
+    Distance DECIMAL(10,2
