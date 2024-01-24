@@ -47,4 +47,4 @@ CREATE TABLE Bus (
 );
 
  CREATE TABLE Schedule (
-    ScheduleID INT PRIMARY KEY,
+    ScheduleID INT PRIMARY 
