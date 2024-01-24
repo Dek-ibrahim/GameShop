@@ -39,4 +39,4 @@ CREATE TABLE Route (
 );
 -- Bus Table
 CREATE TABLE Bus (
-    BusID INT PRIM
+    Bus
