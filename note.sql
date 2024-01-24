@@ -43,3 +43,14 @@ CREATE TABLE Bus (
     BusName VARCHAR(20),
     Capacity INT,
     CurrentLocation VARCHAR(255),
+    Status VARCHAR(20)
+);
+
+ CREATE TABLE Schedule (
+    ScheduleID INT PRIMARY KEY,
+    RouteID INT,
+    BusID INT,
+    DayOfWeek VARCHAR(10),
+    FOREIGN KEY (RouteID) REFERENCES Route(RouteID),
+    FOREIGN KEY (BusID) REFERENCES Bus(BusID)
+);
