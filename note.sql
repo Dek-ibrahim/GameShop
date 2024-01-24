@@ -50,5 +50,4 @@ CREATE TABLE Bus (
     ScheduleID INT PRIMARY KEY,
     RouteID INT,
     BusID INT,
-    DayOfWeek VARCHAR(10),
-    FOR
+    DayOfWeek VARCHAR(10)
