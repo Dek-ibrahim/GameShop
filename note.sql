@@ -46,4 +46,4 @@ CREATE TABLE Bus (
     Status VARCHAR(20)
 );
 
- CREATE TABLE Sched
+ CREAT
