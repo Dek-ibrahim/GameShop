@@ -1,67 +1,80 @@
-// BusInput.jsx
 import React, { useState } from 'react';
+import { FaUser } from 'react-icons/fa';
+import { RiLockPasswordFill } from 'react-icons/ri';
+import { MdEmail } from 'react-icons/md';
 
-const BusInput = ({ onCreateBus }) => {
-  const [busName, setBusName] = useState('');
-  const [capacity, setCapacity] = useState('');
-
-  const handleBusNameChange = (event) => {
-    setBusName(event.target.value);
-  };
-
-  const handleCapacityChange = (event) => {
-    setCapacity(event.target.value);
-  };
-
-  const handleSubmit = () => {
-    // Validate input fields
-    if (!busName || !capacity || isNaN(parseInt(capacity, 10)) || parseInt(capacity, 10) <= 0) {
-      alert('Please provide valid bus information');
-      return;
-    }
-
-    // Create bus object
-    const newBus = {
-      busName,
-      capacity: parseInt(capacity, 10), // Convert capacity to integer
-    };
-
-    // Pass the new bus object to the onCreateBus callback
-    onCreateBus(newBus);
-
-    // Reset input fields
-    setBusName('');
-    setCapacity('');
-  };
+const Loginsignup = () => {
+  const [action, setAction] = useState('Sign up');
 
   return (
-    <div>
-      <h2 className="text-xl font-bold mb-4">Enter Bus Information</h2>
-      <div className="mb-4">
-        <label htmlFor="busName" className="block text-sm font-semibold mb-2">Bus Name:</label>
-        <input
-          type="text"
-          id="busName"
-          value={busName}
-          onChange={handleBusNameChange}
-          className="border px-2 py-1 w-full"
-        />
+    <div className="bg-rose-500 min-h-screen flex items-center justify-center">
+      <div className="bg-pink-300 p-8 w-96 rounded-lg">
+        <div className="flex flex-col items-center gap-9 mt-8">
+          <div className="text-4xl font-bold text-rose-500">{action}</div>
+          <div className="w-16 h-2 bg-rose-500 rounded-md"></div>
+        </div>
+        <div className="mt-14 flex flex-col gap-8">
+          {action === 'Log in' ? null : (
+            <div className="flex justify-center items-center mx-auto w-80 h-16 bg-gray-200 rounded-md">
+              <div className="mr-8">
+                <FaUser className="text-gray-600 text-lg" />
+              </div>
+              <input
+                className="h-12 w-full bg-transparent outline-none border-none text-gray-600 text-lg"
+                type="text"
+                placeholder="Name"
+              />
+            </div>
+          )}
+
+          <div className="flex justify-center items-center mx-auto w-80 h-16 bg-gray-200 rounded-md">
+            <div className="mr-8">
+              <MdEmail className="text-gray-600 text-lg" />
+            </div>
+            <input
+              className="h-12 w-full bg-transparent outline-none border-none text-gray-600 text-lg"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+
+          <div className="flex justify-center items-center mx-auto w-80 h-16 bg-gray-200 rounded-md">
+            <div className="mr-8">
+              <RiLockPasswordFill className="text-gray-600 text-lg" />
+            </div>
+            <input
+              className="h-12 w-full bg-transparent outline-none border-none text-gray-600 text-lg"
+              type="password"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+        <div className="pl-16 mt-2 text-gray-600 text-lg">Forget Password</div>
+        <div className="flex gap-8 mx-auto mt-16">
+          <div
+            className={`${
+              action === 'Log in' ? 'bg-gray-500' : 'bg-rose-500'
+            } submit flex justify-center items-center w-48 h-16 text-white cursor-pointer font-bold text-lg rounded-full`}
+            onClick={() => {
+              setAction('Sign up');
+            }}
+          >
+            Sign up
+          </div>
+          <div
+            className={`${
+              action === 'Sign up' ? 'bg-gray-500' : 'bg-rose-500'
+            } submit flex justify-center items-center w-48 h-16 text-white cursor-pointer font-bold text-lg rounded-full`}
+            onClick={() => {
+              setAction('Log in');
+            }}
+          >
+            Log In
+          </div>
+        </div>
       </div>
-      <div className="mb-4">
-        <label htmlFor="capacity" className="block text-sm font-semibold mb-2">Capacity:</label>
-        <input
-          type="number"
-          id="capacity"
-          value={capacity}
-          onChange={handleCapacityChange}
-          className="border px-2 py-1 w-full"
-        />
-      </div>
-      <button onClick={handleSubmit} className="bg-blue-500 text-white px-4 py-2 rounded">
-        Submit Bus Information
-      </button>
     </div>
   );
 };
 
-export default BusInput;
+export default Loginsignup;

@@ -30,7 +30,7 @@ const BusProcess = ({ onSelectBus }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 justify-center text-center p-16  ">
         {buses.map((bus) => (
           <div key={bus.id} className={`p-4 border ${selectedBus === bus ? 'border-blue-500' : 'border-gray-300 bg-blue-500 text-white h-[160px]  w-48'} rounded`}>
-            <img src="../public/12.png" alt="network error" className=' w-[100px] ml-[15px] -mt-20 rounded-full  '/>
+            <img src="../public/buss.jpg" alt="network error" className=' w-[100px] ml-[15px] -mt-20 rounded-full  '/>
             {/* <img src={`https://example.com/bus-images/${bus.id}.jpg`} alt={`Bus ${bus.id}`} className="mb-2 rounded-md w-full h-32 object-cover" /> */}
             {/* <h3 className="text-lg font-bold mb-2">{bus.title}</h3> */}
             <p className=''><strong>Bus Name:</strong> {bus.busName}</p>
