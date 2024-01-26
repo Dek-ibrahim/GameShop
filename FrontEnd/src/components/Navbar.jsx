@@ -22,7 +22,7 @@ const HomePage = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
-      className="flex  flex-col items-center justify-center h-screen  lg:bg-[url(../public/bus.jpg)] md:bg-[url(../public/bus.jpg)] bg-cover bg-center bg-no-repeat sm:bg-gradient-to-t bg-gradient-to-t from-[#cc313d]  to-[#fea4b9]"
+      className="flex  flex-col items-center justify-center h-screen  bg-[url(../public/bus.jpg)]    "
     >          
     
       <div className='-translate-y-32 text-center'>
