@@ -1,4 +1,4 @@
- Password Strength Indicator
+ Password Strength Indicat
  User Profile
  Social Media Authentication
 Dark Mode
