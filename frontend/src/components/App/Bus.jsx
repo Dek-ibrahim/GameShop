@@ -8,6 +8,11 @@ import BookingTicket from './BookingTicket';
 import BusDetails from './BusDetails';
 
 const BookingProcess = () => {
+  const [user, setUser] = useState({
+    name: '',
+    email: '',
+    phone: '',
+  });
   const [formData, setFormData] = useState({});
   const [selectedBus, setSelectedBus] = useState(null);
   const [selectedSeats, setSelectedSeats] = useState([]);
@@ -41,6 +46,7 @@ const BookingProcess = () => {
     setTimeout(() => {
       // For simplicity, assume the booking is successful
       const bookingDetails = {
+        user,
         ...formData,
         selectedBus,
         selectedSeats,
@@ -54,6 +60,11 @@ const BookingProcess = () => {
   };
 
   const resetBooking = () => {
+    setUser({
+      name: '',
+      email: '',
+      phone: '',
+    });
     setFormData({});
     setSelectedBus(null);
     setSelectedSeats([]);
@@ -66,6 +77,9 @@ const BookingProcess = () => {
     // For simplicity, checking if name, email, and phone are filled
     // Also, ensure that bus details are selected
     return (
+      user.name &&
+      user.email &&
+      user.phone &&
       formData.name &&
       formData.email &&
       formData.phone &&
@@ -86,8 +100,8 @@ const BookingProcess = () => {
           <div className={`mr-4 ${currentStep >= 1 ? 'text-blue-500 font-bold' : 'text-gray-500'}`}> Fill Form</div>
           <div className={`mr-4 ${currentStep >= 2 ? 'text-blue-500 font-bold' : 'text-gray-500'}`}> Select Bus </div>
           <div className={`mr-4 ${currentStep >= 3 ? 'text-blue-500 font-bold' : 'text-gray-500'}`}> Select Seats</div>
-          {/* <div className={`mr-4 ${currentStep >= 4 ? 'text-blue-500 font-bold' : 'text-gray-500'}`}> Confirm Booking</div> */}
-          <div className={`mr-4 ${currentStep >= 4 ? 'text-blue-500 font-bold' : 'text-gray-500'}`}> Booking Ticket</div>
+          <div className={`mr-4 ${currentStep >= 4 ? 'text-blue-500 font-bold' : 'text-gray-500'}`}> Booking Card</div>
+          <div className={`mr-4 ${currentStep >= 5 ? 'text-blue-500 font-bold' : 'text-gray-500'}`}> Booking Ticket</div>
         </div>
       </div>
 
@@ -99,6 +113,7 @@ const BookingProcess = () => {
       {currentStep === 3 && <Seats totalSeats={30} onSelectSeat={handleSeatSelect} onSubmit={handleSeatSubmit} />}
       {currentStep === 4 && (
         <BookingCard
+          user={user}
           formData={formData}
           selectedBus={selectedBus}
           selectedSeats={selectedSeats}
@@ -108,15 +123,6 @@ const BookingProcess = () => {
       )}
       {currentStep === 5 && (
         <BookingTicket bookingDetails={bookingDetails} />
-      )}
-      {currentStep === 6 && (
-        <div>
-          <h2 className="text-xl font-bold mb-2">Booking Confirmation</h2>
-          <p>Your booking has been confirmed!</p>
-          <button onClick={resetBooking} className="bg-blue-500 text-white px-4 py-2 rounded mt-4">
-            Start Over
-          </button>
-        </div>
       )}
 
       {/* Add navigation buttons */}

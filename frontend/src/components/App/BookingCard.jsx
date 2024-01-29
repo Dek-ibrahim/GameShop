@@ -1,18 +1,16 @@
+// BookingCard.jsx
 /* eslint-disable react/prop-types */
- 
-// eslint-disable-next-line no-unused-vars
 import React from 'react';
 
-// eslint-disable-next-line react/prop-types
-const BookingCard = ({ formData, selectedSeats, selectedBus, onBack, onSubmit }) => {
+const BookingCard = ({ user, formData, selectedSeats, selectedBus, onBack, onSubmit }) => {
   return (
     <div className="my-4">
       <h2 className="text-xl font-bold mb-4">Booking Summary</h2>
       <div className="mb-4">
         <h3 className="text-lg font-bold mb-2">Passenger Information</h3>
-        <p>Name: {formData.name}</p>
-        <p>Email: {formData.email}</p>
-        <p>Phone: {formData.phone}</p>
+        <p>Name: {user.name}</p>
+        <p>Email: {user.email}</p>
+        <p>Phone: {user.phone}</p>
       </div>
 
       <div className="mb-4">
@@ -23,8 +21,8 @@ const BookingCard = ({ formData, selectedSeats, selectedBus, onBack, onSubmit })
       <div className="mb-4">
         <h3 className="text-lg font-bold mb-2">Bus Transport Details</h3>
         <p>Bus Name: {selectedBus.name}</p>
-        <p>Departure: {selectedBus.departure}</p>
-        <p>Destination: {selectedBus.destination}</p>
+        <p>Bus Number: {selectedBus.number}</p>
+        <p>Departure Time: {selectedBus.departureTime}</p>
         {/* Add more transport details as needed */}
       </div>
 

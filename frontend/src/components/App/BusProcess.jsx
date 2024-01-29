@@ -47,7 +47,7 @@ const BusProcess = ({ onSelectBus }) => {
       {selectedBus && (
         <div className="mt-4">
           <h2 className="text-xl font-bold mb-2">Bus Selected</h2>
-          <p>{selectedBus.title} has been selected for booking.</p>
+          <p>{selectedBus.busName} has been selected for booking.</p>
           <Link to={`/bus/booking/${selectedBus.id}`} className="bg-blue-500 text-white px-4 py-2 rounded mt-4 inline-block">
             Start Booking Process
           </Link>
@@ -62,4 +62,3 @@ const BusProcess = ({ onSelectBus }) => {
 };
 
 export default BusProcess;
- 

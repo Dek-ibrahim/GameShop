@@ -1,17 +1,32 @@
-// src/firebase.js
-import firebase from 'firebase/app';
-import 'firebase/auth';
+// AuthContext.jsx
+import React, { createContext, useContext, useState } from 'react';
 
-const firebaseConfig = {
-  apiKey: 'AIzaSyDbOb9kZLai_fs2GPWoOqkFdQS8zk4_5CI',
-  authDomain: 'huriye-aa339.firebaseapp.com',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_STORAGE_BUCKET',
-  messagingSenderId: '331511482632',
-  appId: 'YOUR_APP_ID',
+const AuthContext = createContext();
+
+export const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+
+  const login = (userData) => {
+    // In a real application, perform authentication here (e.g., API call)
+    setUser(userData);
+  };
+
+  const logout = () => {
+    // In a real application, perform logout actions (e.g., clear tokens)
+    setUser(null);
+  };
+
+  return (
+    <AuthContext.Provider value={{ user, login, logout }}>
+      {children}
+    </AuthContext.Provider>
+  );
 };
 
-firebase.initializeApp(firebaseConfig);
-
-export const auth = firebase.auth();
-export default firebase;
+export const useAuth = () => {
+  const context = useContext(AuthContext);
+  if (!context) {
+    throw new Error('useAuth must be used within an AuthProvider');
+  }
+  return context;
+};

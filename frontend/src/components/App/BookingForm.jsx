@@ -40,7 +40,7 @@ const BookingForm = ({ onSubmit }) => {
             className="border rounded px-2 py-1 w-full"
           />
         </label>
-        {/* <label className="block mb-2">
+        <label className="block mb-2">
           <input
             type="email"
             placeholder="Email"
@@ -50,7 +50,7 @@ const BookingForm = ({ onSubmit }) => {
             className="border rounded px-2 py-1 w-full"
             required
           />
-        </label> */}
+        </label>
         <label className="block mb-2">
           <input
             type="tel"

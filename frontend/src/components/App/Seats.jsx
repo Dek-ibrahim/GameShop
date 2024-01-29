@@ -1,20 +1,7 @@
 // Seats.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Seats = ({ totalSeats, onSelectSeat, onSubmit, seatTypes }) => {
-  const [formData, setFormData] = useState({
-    selectedSeats: [],
-    seatType: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
+const Seats = ({ totalSeats, onSelectSeat, onSubmit, seatTypes, numberOfPassengers }) => {
   const [selectedSeats, setSelectedSeats] = useState([]);
   const [error, setError] = useState(null);
 
@@ -32,6 +19,8 @@ const Seats = ({ totalSeats, onSelectSeat, onSubmit, seatTypes }) => {
   const handleSeatSubmit = () => {
     if (selectedSeats.length === 0) {
       setError('Please select at least one seat.');
+    } else if (selectedSeats.length > numberOfPassengers) {
+      setError(`You can only select up to ${numberOfPassengers} seats.`);
     } else {
       onSubmit(selectedSeats);
       setError(null);
@@ -43,14 +32,13 @@ const Seats = ({ totalSeats, onSelectSeat, onSubmit, seatTypes }) => {
     setError(null);
   };
 
-  const handleSeatSelect = (seatNumber) => {
-    if (selectedSeats.length < totalSeats) {
-      setSelectedSeats((prevSeats) => [...prevSeats, seatNumber]);
+  useEffect(() => {
+    // Cleanup function to remove side effects
+    return () => {
+      setSelectedSeats([]);
       setError(null);
-    } else {
-      setError(`You can only select up to ${totalSeats} seats.`);
-    }
-  };
+    };
+  }, []);
 
   return (
     <div className="my-4">
@@ -62,8 +50,9 @@ const Seats = ({ totalSeats, onSelectSeat, onSubmit, seatTypes }) => {
           <button
             key={index}
             onClick={() => handleSeatClick(index)}
-            disabled={selectedSeats.includes(index + 1)}
+            disabled={selectedSeats.includes(index + 1) || selectedSeats.length >= numberOfPassengers}
             className={`
+              seat-button
               bg-${selectedSeats.includes(index + 1) ? 'gray-400' : 'green-500'} 
               text-white 
               p-3 
@@ -80,12 +69,12 @@ const Seats = ({ totalSeats, onSelectSeat, onSubmit, seatTypes }) => {
         Selected Seats: {selectedSeats.length > 0 ? selectedSeats.join(', ') : 'None'}
       </p>
       <div className="mt-6">
-        {/* <button
+        <button
           onClick={handleSeatSubmit}
           className="bg-blue-500 text-white px-5 py-3 rounded mr-3"
         >
-          Submit ts
-        </button> */}
+          Submit
+        </button>
         <button
           onClick={handleClearSelection}
           className="bg-red-500 text-white px-12 py-3 rounded"
