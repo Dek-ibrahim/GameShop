@@ -1,1 +1,1 @@
-a;asd3  QAWSEDRTFGYIPJOK[PL=--------0-00
+a;asd3  QAWSEDRTFGYIPJOK[PL=-----
