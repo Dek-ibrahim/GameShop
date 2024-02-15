@@ -25,4 +25,4 @@ export default z
 export default z
 export default z
 export default
-export defaul
+export d
