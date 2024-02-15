@@ -6,4 +6,4 @@ function z() {
   )
 }
 
-export default z
+export d
