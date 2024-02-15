@@ -1,3 +1,1 @@
-import React from 'react'
-
-funct
+import React from 'react
