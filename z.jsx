@@ -23,4 +23,4 @@ export default z
 export default z
 export default z
 export default z
-export defau
+export def
