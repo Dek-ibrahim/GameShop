@@ -26,5 +26,4 @@ export default z
 export default z
 export default z
 export default z
-export default z
-e
+export defau
